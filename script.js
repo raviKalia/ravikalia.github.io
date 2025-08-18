@@ -260,10 +260,10 @@ document.head.appendChild(style);
 // Project Popup Functionality
 const projectData = {
     yourspot: {
-        title: "Your Spot Platform",
+        title: "Mood Board",
         category: "Web Application",
         image: "./Assets/art board.png",
-        description: "A comprehensive platform connecting freelancers with clients, featuring secure user accounts, searchable directories, and integrated messaging system. Built with modern web technologies to ensure scalability and performance.",
+        description: "A Mood board is a visual representation of your ideas and inspiration.",
         features: [
             "User authentication and secure accounts",
             "Advanced search and filtering system",
@@ -305,8 +305,8 @@ const projectData = {
         technologies: ["Mobile Design", "UI/UX", "Responsive", "Mobile First"]
     },
     project1: {
-        title: "Modern Web Application",
-        category: "Web Application",
+        title: "Adobe Illustrator",
+        category: "Web Design",
         image: "./Assets/project-1.png",
         description: "Feature-rich web application with modern interface design and powerful functionality for enhanced user experience and productivity.",
         features: [
@@ -317,7 +317,7 @@ const projectData = {
             "API integration capabilities",
             "Performance optimized architecture"
         ],
-        technologies: ["Web App", "React", "Full-Stack", "Modern UI"]
+        technologies: ["Adobe Illustrator", "Web Design", "UI/UX", "Responsive Design"]
     },
     branding: {
         title: "Personal Branding",
@@ -332,7 +332,7 @@ const projectData = {
             "Application guidelines",
             "Digital and print assets"
         ],
-        technologies: ["Branding", "Logo Design", "Identity", "Graphics"]
+        technologies: ["Branding", "Logo Design", "Identity", "Graphics", "adobe Illustrator"]
     },
     businesscard: {
         title: "Business Card Design",
@@ -347,7 +347,7 @@ const projectData = {
             "Multiple format variations",
             "QR code integration"
         ],
-        technologies: ["Print Design", "Branding", "Graphics", "Layout"]
+        technologies: ["Print Design", "Branding", "Graphics", "Layout", "Adobe Illustrator"]
     },
     resume: {
         title: "Resume Design",
@@ -362,7 +362,7 @@ const projectData = {
             "Multiple format exports",
             "Easy customization options"
         ],
-        technologies: ["Print Design", "Typography", "Layout", "Professional"]
+        technologies: ["Print Design", "Typography", "Layout", "Professional","microsoft Word"]
     },
     rkui: {
         title: "RK UI Component Library",
@@ -377,7 +377,7 @@ const projectData = {
             "Documentation and examples",
             "Framework agnostic"
         ],
-        technologies: ["UI Kit", "Components", "Design System", "React"]
+        technologies: ["UI Kit", "Components", "Design System", "Adobe XD", "Figma"]
     },
     uxkit: {
         title: "UX Design Kit",
