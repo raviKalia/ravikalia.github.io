@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravi Kumar - Web Designer & Developer</title>
+    <meta name="description" content="Ravi Kumar - Creative Web Designer and Developer specializing in clean, responsive, user-friendly websites.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="./Assets/LogoRK.png" alt="Ravi Kumar Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm Ravi Kumar</h1>
+                <p class="hero-subtitle">Web Designer & Developer</p>
+                <p class="hero-description">Creating clean, responsive, user-friendly websites that bridge design aesthetics with technical expertise.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <img src="./Assets/LogoRK.png" alt="Ravi Kumar" class="hero-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A showcase of my recent work in web design and development</p>
+            
+            <div class="projects-grid">
+                <!-- Color Design Project -->
+                <div class="project-card" onclick="openProjectPopup('color')">
+                    <div class="project-image">
+                        <img src="./Assets/Color.png" alt="Color Design Project">
+                    </div>
+                    <div class="project-content">
+                        <h3>Color Design System</h3>
+                        <p>Comprehensive color palette and design system for modern web applications with accessibility considerations.</p>
+                        <div class="project-tags">
+                            <span>Design</span>
+                            <span>UI/UX</span>
+                            <span>Branding</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Design</a>
+                            <a href="#" class="project-link">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile About Design -->
+                <div class="project-card" onclick="openProjectPopup('mobabout')">
+                    <div class="project-image">
+                        <img src="./Assets/Mob-About.png" alt="Mobile About Page Design">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile About Page</h3>
+                        <p>Mobile-first design for about page with clean layout and intuitive user experience for mobile devices.</p>
+                        <div class="project-tags">
+                            <span>Mobile</span>
+                            <span>UI/UX</span>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card" onclick="openProjectPopup('project1')">
+                    <div class="project-image">
+                        <img src="./Assets/project-1.png" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Web Application</h3>
+                        <p>Modern web application with clean interface and powerful functionality for enhanced user experience.</p>
+                        <div class="project-tags">
+                            <span>Web App</span>
+                            <span>React</span>
+                            <span>Full-Stack</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ravi Branding -->
+                <div class="project-card" onclick="openProjectPopup('branding')">
+                    <div class="project-image">
+                        <img src="./Assets/Ravi_Branding.png" alt="Ravi Branding">
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Branding</h3>
+                        <p>Complete branding package including logo design, color schemes, and brand guidelines for professional identity.</p>
+                        <div class="project-tags">
+                            <span>Branding</span>
+                            <span>Logo Design</span>
+                            <span>Identity</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Brand</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Card Design -->
+                <div class="project-card" onclick="openProjectPopup('businesscard')">
+                    <div class="project-image">
+                        <img src="./Assets/Ravi_Business_card.png" alt="Business Card Design">
+                    </div>
+                    <div class="project-content">
+                        <h3>Business Card Design</h3>
+                        <p>Professional business card design with modern aesthetics and clear information hierarchy.</p>
+                        <div class="project-tags">
+                            <span>Print Design</span>
+                            <span>Branding</span>
+                            <span>Graphics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Design</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resume Design -->
+                <div class="project-card" onclick="openProjectPopup('resume')">
+                    <div class="project-image">
+                        <img src="./Assets/resume.png" alt="Resume Design">
+                    </div>
+                    <div class="project-content">
+                        <h3>Resume Design</h3>
+                        <p>Clean and professional resume design with modern typography and effective information layout.</p>
+                        <div class="project-tags">
+                            <span>Print Design</span>
+                            <span>Typography</span>
+                            <span>Layout</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Your Spot Platform -->
+                <div class="project-card" onclick="openProjectPopup('yourspot')">
+                    <div class="project-image">
+                        <img src="./Assets/art board.png" alt="Your Spot Platform">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Web Application</div>
+                        <h3>Your Spot Platform</h3>
+                        <p>A responsive platform connecting freelancers with clients. Features secure accounts, searchable directories, and integrated messaging.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RK UI Kit -->
+                <div class="project-card" onclick="openProjectPopup('rkui')">
+                    <div class="project-image">
+                        <img src="./Assets/rkui.png" alt="RK UI Kit">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">UI Kit</div>
+                        <h3>RK UI Component Library</h3>
+                        <p>Comprehensive UI component library with modern design patterns and reusable components for web applications.</p>
+                        <div class="project-tags">
+                            <span>UI Kit</span>
+                            <span>Components</span>
+                            <span>Design System</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UX Kit -->
+                <div class="project-card" onclick="openProjectPopup('uxkit')">
+                    <div class="project-image">
+                        <img src="./Assets/uxkit.png" alt="UX Kit">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">UX Design</div>
+                        <h3>UX Design Kit</h3>
+                        <p>Complete UX design toolkit with wireframes, user flows, and design patterns for creating exceptional user experiences.</p>
+                        <div class="project-tags">
+                            <span>UX Design</span>
+                            <span>Wireframes</span>
+                            <span>User Flow</span>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-intro">I'm Ravi Kumar, a passionate Web Designer and Developer based in [Your Location]. With over 3 years of experience in the digital space, I've dedicated myself to creating websites that not only look stunning but also deliver exceptional user experiences.</p>
+                    
+                    <p>My journey began with a curiosity about how websites work, which evolved into a full-fledged passion for both design aesthetics and technical implementation. I believe that great websites are born from the perfect marriage of beautiful design and clean, efficient code.</p>
+
+                    <h3>My Philosophy</h3>
+                    <p>I approach every project with the mindset that design should serve both form and function. A website isn't just a digital brochure—it's a powerful tool that should help businesses connect with their audience, tell their story, and achieve their goals.</p>
+
+                    <h3>What Drives Me</h3>
+                    <p>I'm constantly inspired by the ever-evolving nature of web technologies. Whether it's experimenting with new CSS features, exploring JavaScript frameworks, or diving into user experience research, I'm always learning and growing. This continuous learning ensures that my clients always receive cutting-edge solutions.</p>
+
+                    <div class="timeline">
+                        <h3>My Journey</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021</div>
+                            <div class="timeline-content">
+                                <h4>Started Learning Web Development</h4>
+                                <p>Began to learn the basics of web development, including HTML, CSS, and JavaScript.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-content">
+                                <h4>Expanded Skill Set</h4>
+                                <p>Expanded my skills including React, Node.js, and MongoDB.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-content">
+                                <h4>Start developing Own Projects</h4>
+                                <p>Start developing Projects for personnel experience and expert my skill.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-content">
+                                <h4>Web Design and Development</h4>
+                                <p>Take admission in Web Design and Development Course and learn more about web design and development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills">
+                        <h3>Skills & Technologies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Design</h4>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Adobe XD</li>
+                                    <li>Responsive Design</li>
+                                    <li>UI/UX Principles</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Development</h4>
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools</h4>
+                                <ul>
+                                    <li>Git</li>
+                                    <li>VS Code</li>
+                                    <li>Webpack</li>
+                                    <li>Responsive Testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-sidebar">
+                    <div class="skills-card">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-bar">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">React</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="certifications">
+                        <h3>Certifications</h3>
+                        <ul>
+                            <li>Nielit 'O'level Certificate.</li>
+                            <li>Web design and development course from Humber College.</li>
+                        </ul>
+                    </div>
+
+                    <div class="interests">
+                        <h3>When I'm Not Coding</h3>
+                        <p>You'll find me exploring photography, reading about design trends, contributing to open-source projects, or hiking in nature for inspiration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Ready to bring your ideas to life? Let's create something amazing!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:kravi014@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            kravi014@gmail.com
+                        </a>
+                        <a href="https://linkedin.com/in/ravi-kumar-903462140" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/ravikalia-01" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Popup Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Project Title</h2>
+                <span class="close" onclick="closeProjectPopup()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Project Image" onclick="openImageModal(this.src, this.alt)">
+                </div>
+                <div class="modal-details">
+                    <div class="modal-category" id="modalCategory">Category</div>
+                    <p id="modalDescription">Project description goes here...</p>
+                    <div class="modal-features">
+                        <h4>Key Features:</h4>
+                        <ul id="modalFeatures">
+                            <li>Feature 1</li>
+                            <li>Feature 2</li>
+                            <li>Feature 3</li>
+                        </ul>
+                    </div>
+                    <div class="modal-tech">
+                        <h4>Technologies Used:</h4>
+                        <div id="modalTags" class="project-tags">
+                            <span>Tech 1</span>
+                            <span>Tech 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-size Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="image-modal-content">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img id="fullSizeImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ravi Kumar. All rights reserved.</p>
+            <p class="tagline">Clean Design. Functional Code. Websites that work for people.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
